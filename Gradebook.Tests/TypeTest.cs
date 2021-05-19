@@ -76,24 +76,24 @@ namespace Gradebook.Tests
 			return 3;
 		}
 
-		private void SetName(Book book1, string name)
+		private void SetName(InMemoryBook book1, string name)
 		{
 			book1.Name = name;
 		}
 
-		private void GetBookSetNameByRef(ref Book book, string name)
+		private void GetBookSetNameByRef(ref InMemoryBook book, string name)
 		{
-			book = new Book(name);
+			book = new InMemoryBook(name);
 		}
 
-		private void GetBookSetName(Book book, string name)
+		private void GetBookSetName(InMemoryBook book, string name)
 		{
-			book = new Book(name);
+			book = new InMemoryBook(name);
 		}
 
-		private Book GetBook(string name)
+		private InMemoryBook GetBook(string name)
 		{
-			return new Book(name);
+			return new InMemoryBook(name);
 		}
 	}
 }
